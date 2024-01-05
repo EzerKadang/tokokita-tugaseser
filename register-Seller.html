@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register-Seller</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-cyZp5IiZ+AW6c+xS6rFqP6SoBhc2Vz/K4owhMP0s2P4TK8mz4h0qjtzfFXwCPs5EqOu/9FfwqJqGUGlMuBRPxg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style/register-Seller-style.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <p class="title">
+        Hallo, <span class="bold">Insyu</span> ayo isi detail toko kamu
+      </p>
+      <form>
+        <label for="nohp">Masukkan NO.HP mu</label>
+        <input
+          name="nohp"
+          type="tel"
+          placeholder="Masukkan NO. HP mu"
+          required
+        />
+        <label for="namatoko">Masukkan Nama Toko & Nama Domain</label>
+        <input
+          name="namatoko"
+          type="text"
+          placeholder="Nama Toko Kamu"
+          required
+        />
+        <div class="domain">
+          <label for="domain">tokokita.com/</label>
+          <input name="domain" type="url" placeholder="Nama Domain" required />
+        </div>
+
+        <label for="alamat">Masukkan Alamat Tokomu</label>
+        <input
+          name="alamat"
+          type="text"
+          placeholder="Nama Toko Kamu"
+          required
+        />
+        <button type="submit" formaction="home.html">Login</button>
+      </form>
+    </div>
+  </body>
+</html>

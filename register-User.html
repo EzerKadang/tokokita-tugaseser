@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrasi-User</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-cyZp5IiZ+AW6c+xS6rFqP6SoBhc2Vz/K4owhMP0s2P4TK8mz4h0qjtzfFXwCPs5EqOu/9FfwqJqGUGlMuBRPxg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style/register-style.css" />
+  </head>
+
+  <body>
+    <div class="register-container">
+      <h1 class="title">Daftar</h1>
+      <form>
+        <input type="text" placeholder="Username" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <input
+          type="password"
+          id="confirm-password"
+          placeholder="Ulangi Password"
+          required
+        />
+        <div class="show-password">
+          <input type="checkbox" id="show-password-checkbox" />
+          <label for="show-password-checkbox" class="show"
+            >Tampilkan Password</label
+          >
+        </div>
+        <button type="submit">Daftar</button>
+      </form>
+      <p style="margin-top: 1rem">
+        Sudah punya akun?
+        <a href="./login.html" style="font-weight: bold">Login disini</a>
+      </p>
+    </div>
+
+    <script>
+      var passwordField = document.getElementById("password");
+      var confirmPasswordField = document.getElementById("confirm-password");
+      var showPasswordCheckbox = document.getElementById(
+        "show-password-checkbox"
+      );
+
+      showPasswordCheckbox.addEventListener("change", function () {
+        if (showPasswordCheckbox.checked) {
+          passwordField.type = "text";
+          confirmPasswordField.type = "text";
+        } else {
+          passwordField.type = "password";
+          confirmPasswordField.type = "password";
+        }
+      });
+    </script>
+  </body>
+</html>
