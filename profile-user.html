@@ -36,37 +36,25 @@
         </div>
         <div class="edit-biodata">
           <h2>Ubah Data Diri</h2>
-          <table>
-            <tr>
-              <td>Nama</td>
-              <td>Insyu</td>
-              <td class="Ubah">Ubah</td>
-            </tr>
-            <tr>
-              <td>Tgl Lahir</td>
-              <td>31 Des 1997</td>
-              <td class="Ubah">Ubah</td>
-            </tr>
-            <tr>
-              <td>Jenis Kelamin</td>
-              <td>Perempuan</td>
-              <td class="Ubah">Ubah</td>
-            </tr>
-          </table>
-          <h2>Ubah Kontak</h2>
-          <table>
-            <tr>
-              <td>Email</td>
-              <td>Insyu@gmail.com</td>
-              <td class="Ubah">Ubah</td>
-            </tr>
-            <tr>
-              <td>Nomor HP</td>
-              <td>081345444142</td>
-              <td class="Ubah">Ubah</td>
-            </tr>
-          </table>
-          <button type="submit">simpan</button>
+          <form>
+            <label for="nama">Nama</label>
+            <input name="nama" type="tel" placeholder="Insyu" />
+            <label for="tgllahir">Tgl Lahir</label>
+            <input
+              type="text"
+              placeholder="31/12/1997"
+              onfocus="(this.type='date')"
+              onblur="(this.type='text')"
+            />
+            <label for="jeniskelamin">Jenis Kelamin</label>
+            <input name="jeniskelamin" type="text" placeholder="Perempuan" />
+            <h2>Ubah Kontak</h2>
+            <label for="email">Email</label>
+            <input name="email" type="email" placeholder="insyu@gmail.com" />
+            <label for="nohp">No Handphone</label>
+            <input name="nohp" type="tel" placeholder="081343717272" />
+            <button type="submit">simpan</button>
+          </form>
         </div>
       </div>
     </main>
