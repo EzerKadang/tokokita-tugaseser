@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tambah-Menu</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-cyZp5IiZ+AW6c+xS6rFqP6SoBhc2Vz/K4owhMP0s2P4TK8mz4h0qjtzfFXwCPs5EqOu/9FfwqJqGUGlMuBRPxg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style/Upload-Produk-style.css" />
+  </head>
+  <body>
+    <h1>Tambah menu</h1>
+    <main>
+      <h2>Informasi Menu</h2>
+      <form action="">
+        <div class="upload-foto">
+          <div class="label-foto">
+            <h3>Foto</h3>
+            <p>
+              Format gambar .jpg .jpeg .png dan ukuran minimum 300 x 300px
+              (Untuk gambar optimal gunakan ukuran minimum 700 x 700 px).
+            </p>
+          </div>
+          <div class="form-group">
+            <label for="img"> <img src="./Asset/Icon/Iconfoto.png" /></label>
+            <input
+              type="file"
+              id="img"
+              accept="image/*"
+              style="display: none"
+            />
+          </div>
+        </div>
+
+        <div class="nama">
+          <div class="label-nama">
+            <h3>Nama</h3>
+            <p>
+              Nama produk min. 40 karakter. Disarankan untuk tidak menggunakan
+              huruf kapital berlebih dan kata-kata promosi.
+            </p>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Contoh: Ayam Goreng Keremes" />
+          </div>
+        </div>
+
+        <div class="deskripsi">
+          <div class="label-deskripsi">
+            <h3>Deskripsi</h3>
+            <p>
+              Pastikan deskripsi Menu memuat penjelasan detail terkait produkmu
+              agar pembeli mudah mengerti.
+            </p>
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              placeholder="Contoh: 1 porsi ayam goreng kremes"
+            />
+          </div>
+        </div>
+
+        <div class="harga">
+          <div class="label-harga">
+            <h3>harga</h3>
+          </div>
+          <div class="form-group">
+            <input name="Rp" type="number" placeholder="100000000" />
+          </div>
+        </div>
+
+        <div class="kategori">
+          <div class="label-kategori">
+            <h3>kategori</h3>
+          </div>
+          <div class="form-group">
+            <select name="pets" id="pet-select">
+              <option value="">--Pilih Kategori yang sudah ada--</option>
+              <option value="Makanan">Makanan</option>
+              <option value="Minuman">Minuman</option>
+              <option value="Jajanan">Jajanan</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="stok">
+          <div class="label-stok">
+            <h3>stok</h3>
+          </div>
+          <div class="form-group">
+            <input type="number" placeholder="Masukkan Jumlah Stok" />
+          </div>
+        </div>
+      </form>
+    </main>
+    <div class="button">
+      <button type="submit">Simpan</button>
+      <button type="cancel">Batal</button>
+    </div>
+  </body>
+</html>
